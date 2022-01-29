@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400;600;700&family=Urbanist:wght@100;400;700;800&display=swap");
-
+:root {
+  --primary-color: #dc2f02;
+}
 * {
   margin: 0;
   padding: 0;
@@ -19,4 +21,9 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+section {
+  padding: 0 5vw;
+  margin-bottom: 2em;
 }

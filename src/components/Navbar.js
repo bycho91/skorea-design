@@ -1,13 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 
-const NavbarContainer = styled.div`
+const NavbarContainer = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 90px;
-  padding: 0 5vw;
   font-weight: 700;
   letter-spacing: 2px;
 `;

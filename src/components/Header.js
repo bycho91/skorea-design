@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-const HeaderContainer = styled.div`
+const HeaderContainer = styled.section`
   position: relative;
-  height: calc(100vh - 180px);
+  height: calc(100vh - 90px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,7 +42,7 @@ const MainContent = styled.div`
   text-transform: uppercase;
   text-align: right;
   font-size: 15vw;
-  line-height: 0.8em;
+  line-height: 0.75em;
   font-weight: 500;
   cursor: default;
   overflow-wrap: anywhere;
@@ -59,7 +59,7 @@ const Header = () => {
       <MainContent>
         Style
         <br />
-        <span style={{ color: "#dc2f02" }}>&</span>
+        <span style={{ color: "var(--primary-color)" }}>&</span>
         <br />
         culture
       </MainContent>
