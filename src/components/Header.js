@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import SectionHeader from "./SectionHeader";
+import Divider from "./Divider";
 
 const HeaderContainer = styled.section`
   position: relative;
@@ -51,10 +53,11 @@ const MainContent = styled.div`
 const Header = () => {
   return (
     <HeaderContainer>
+      <SectionHeader title="Home" />
       <SideMenu>
         <li>Home</li>
-        <li>Products</li>
-        <li>About Us</li>
+        <li>Featured</li>
+        <li>Gallery</li>
       </SideMenu>
       <MainContent>
         Style
@@ -63,6 +66,7 @@ const Header = () => {
         <br />
         culture
       </MainContent>
+      <Divider />
     </HeaderContainer>
   );
 };

@@ -1,14 +1,20 @@
 import React from "react";
 import styled from "styled-components";
 import { photos } from "../data";
+import SectionHeader from "./SectionHeader";
 
 const Container = styled.section`
+  width: 100%;
+  position: relative;
+`;
+
+const Wrapper = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  gap: 3em;
   width: 90%;
   margin: 0 auto;
+  flex-basis: 100%;
 
   img {
     clip-path: inset(0% 0% 0% 0%);
@@ -20,47 +26,57 @@ const Container = styled.section`
   }
 `;
 
-const SmallLayout = styled.div`
+const FeaturedCard = styled.div`
+  text-align: center;
+
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-`;
-
-const BigLayout = styled.div`
-  text-align: right;
-
-  flex: 2;
   position: relative;
+  transition: all 1s ease;
 
   img {
     width: 70%;
-    height: 900px;
+    height: 100vh;
     object-fit: cover;
   }
   h6 {
     position: absolute;
-    transform: rotate(-90deg);
-    right: 70%;
-    bottom: 25px;
+    right: 0;
+    top: 0;
+    transform-origin: top right;
+    transform: rotate(90deg) translateX(100%) translateY(50%);
+  }
+
+  &:hover {
+    color: var(--primary-color);
+    img {
+      filter: blur(1px);
+      transform: scale(1.02);
+    }
   }
 `;
 
 const Image = styled.img``;
 
 const Featured = () => {
-  const [first, second] = photos;
+  const [first, second, third] = photos;
 
   return (
     <Container>
-      <SmallLayout>
-        <h6>history</h6>
-        <Image src={first} />
-      </SmallLayout>
-      <BigLayout>
-        <h6>night</h6>
-        <Image src={second} />
-      </BigLayout>
+      <SectionHeader title="Featured" />
+      <Wrapper>
+        <FeaturedCard>
+          <h6>history</h6>
+          <Image src={first} />
+        </FeaturedCard>
+        <FeaturedCard>
+          <h6>food</h6>
+          <Image src={second} />
+        </FeaturedCard>
+        <FeaturedCard>
+          <h6>night</h6>
+          <Image src={third} />
+        </FeaturedCard>
+      </Wrapper>
     </Container>
   );
 };
