@@ -24,6 +24,10 @@ const Wrapper = styled.div`
     text-transform: uppercase;
     font-size: 1.5rem;
   }
+
+  @media(max-width: 920px) {
+    flex-direction: column;
+  }
 `;
 
 const FeaturedCard = styled.div`
@@ -51,6 +55,19 @@ const FeaturedCard = styled.div`
     img {
       filter: blur(1px);
       transform: scale(1.02);
+    }
+  }
+
+  @media(max-width: 920px) {
+    h6 {
+      position: relative;
+      transform: unset;
+      text-align: center;
+    }
+    img {
+      width: 100vw;
+      min-width: 400px;
+      height: 300px;
     }
   }
 `;
