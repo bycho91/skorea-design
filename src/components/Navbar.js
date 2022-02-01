@@ -22,6 +22,10 @@ const Side = styled.div`
     transform: scale(1.02);
     cursor: pointer;
   }
+
+  @media(max-width:500px) {
+    font-size: 1rem;
+  }
 `;
 
 const Center = styled.a`

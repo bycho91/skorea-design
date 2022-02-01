@@ -35,7 +35,7 @@ const SideMenu = styled.ul`
 
   @media (max-width: 800px) {
     left: 50%;
-    top: 10%;
+    top: 5%;
     transform: translateX(-50%);
   }
 `;
@@ -48,6 +48,12 @@ const MainContent = styled.div`
   font-weight: 800;
   cursor: default;
   overflow-wrap: anywhere;
+
+
+  @media(max-width: 800px) {
+    text-align: center;
+    font-size: 20vw;
+  }
 `;
 
 const Header = () => {
