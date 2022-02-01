@@ -33,6 +33,7 @@ const Gallery = () => {
       xPercent: -100 * (sections.length - 1),
       ease: "none",
       scrollTrigger: {
+        start: "top 100px",
         trigger: galleryRef.current,
         pin: true,
         scrub: 0.5,
