@@ -8,6 +8,10 @@ const Container = styled.div`
   top: 50%;
   transform-origin: top right;
   transform: rotate(90deg) translateX(50%);
+
+  @media (max-width: 800px) {
+    display: none;
+  }
 `;
 
 const SectionHeader = ({ title }) => {

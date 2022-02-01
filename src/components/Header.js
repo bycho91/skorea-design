@@ -45,14 +45,14 @@ const MainContent = styled.div`
   text-align: right;
   font-size: 15vw;
   line-height: 0.75em;
-  font-weight: 500;
+  font-weight: 800;
   cursor: default;
   overflow-wrap: anywhere;
 `;
 
 const Header = () => {
   return (
-    <HeaderContainer>
+    <HeaderContainer data-scroll-section>
       <SectionHeader title="Home" />
       <SideMenu>
         <li>Home</li>

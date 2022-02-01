@@ -24,6 +24,10 @@ const Wrapper = styled.div`
     text-transform: uppercase;
     font-size: 1.5rem;
   }
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 `;
 
 const FeaturedCard = styled.div`
@@ -34,8 +38,8 @@ const FeaturedCard = styled.div`
   transition: all 1s ease;
 
   img {
-    width: 70%;
-    height: 100vh;
+    width: 20vw;
+    height: 80vh;
     object-fit: cover;
   }
   h6 {
@@ -53,6 +57,18 @@ const FeaturedCard = styled.div`
       transform: scale(1.02);
     }
   }
+
+  @media (max-width: 800px) {
+    h6 {
+      position: relative;
+      transform: unset;
+    }
+    img {
+      width: 400px;
+      height: 200px;
+      object-fit: cover;
+    }
+  }
 `;
 
 const Image = styled.img``;
@@ -61,9 +77,9 @@ const Featured = () => {
   const [first, second, third] = photos;
 
   return (
-    <Container>
+    <Container data-scroll-section>
       <SectionHeader title="Featured" />
-      <Wrapper>
+      <Wrapper className="wrapper">
         <FeaturedCard>
           <h6>history</h6>
           <Image src={first} />

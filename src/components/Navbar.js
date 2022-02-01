@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const NavbarContainer = styled.section`
+const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,6 +9,8 @@ const NavbarContainer = styled.section`
   height: 90px;
   font-weight: 700;
   letter-spacing: 2px;
+  padding: 0 5vw;
+  margin-bottom: 2em;
 `;
 
 const Side = styled.div`
@@ -38,7 +40,7 @@ const Center = styled.a`
 
 const Navbar = () => {
   return (
-    <NavbarContainer>
+    <NavbarContainer data-scroll-section>
       <Side>Menu</Side>
       <Center>S.Korea</Center>
       <Side>Cart</Side>
