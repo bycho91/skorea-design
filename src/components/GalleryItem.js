@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Container = styled.div`
   width: 100vw;
-  height: 65%;
+  height: 80%;
   display: flex;
   justify-content: center;
 `;
@@ -35,7 +35,7 @@ const Subtitle = styled.h6`
 const GalleryItem = ({ image: { src, title, subtitle, category }, index }) => {
   return (
     <Container>
-      <GalleryItemWrapper>
+      <GalleryItemWrapper className="gallery-item-wrapper">
         <ImageInfo>
           <Title>{title}</Title>
           <Subtitle>{subtitle}</Subtitle>

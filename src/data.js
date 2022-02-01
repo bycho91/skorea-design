@@ -27,6 +27,6 @@ export const images = [
     src: "https://images.pexels.com/photos/3405489/pexels-photo-3405489.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1000",
     title: "Calliope",
     subtitle: "Live the Beauty",
-    category: "Shooting / Adv.Campaing",
+    category: "Shooting / Adv.Campaign",
   },
 ];
