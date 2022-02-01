@@ -49,10 +49,9 @@ const MainContent = styled.div`
   cursor: default;
   overflow-wrap: anywhere;
 
-
-  @media(max-width: 800px) {
+  @media (max-width: 800px) {
     text-align: center;
-    font-size: 20vw;
+    font-size: 5rem;
   }
 `;
 

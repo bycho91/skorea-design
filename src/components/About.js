@@ -15,6 +15,10 @@ const Wrapper = styled.div`
 `;
 const Content = styled.p`
   font-size: 2vw;
+
+  @media (max-width: 800px) {
+    font-size: 1.5rem;
+  }
 `;
 
 const About = () => {

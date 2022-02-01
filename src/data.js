@@ -7,25 +7,25 @@ export const photos = [
 export const images = [
   {
     src: "https://images.pexels.com/photos/8152376/pexels-photo-8152376.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1000",
-    title: "Golden Pothos",
+    title: "Culture Beauty",
     subtitle: "See the beauty",
     category: "Shooting / Adv.Campaing",
   },
   {
     src: "https://images.pexels.com/photos/158756/flowers-plants-korea-nature-158756.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1000",
-    title: "Dracaena Trifasciata",
-    subtitle: "Live the Beauty",
+    title: "Nature Beauty",
+    subtitle: "Beauty of Nature",
     category: "Shooting / Adv.Campaing",
   },
   {
     src: "https://images.pexels.com/photos/2128040/pexels-photo-2128040.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1000",
-    title: "Cereus Penuvianus",
+    title: "Country Beauty",
     subtitle: "Live the Beauty",
     category: "Shooting / Adv.Campaing",
   },
   {
     src: "https://images.pexels.com/photos/3405489/pexels-photo-3405489.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1000",
-    title: "Calliope",
+    title: "Building Beauty",
     subtitle: "Live the Beauty",
     category: "Shooting / Adv.Campaign",
   },
